@@ -21,10 +21,12 @@ from demo_app import views
 
 urlpatterns =[
     path('admin/', admin.site.urls),
-    path("home/" , views.Home ),
-    # path("register/", views.register ),
-    path("register" ,views.RegisterApiView.as_view()),
-    path("register/<id>" ,views.RegisterApiView.as_view()),
-    path("student/" ,views.StudentApiView.as_view())
+    # path("home/" , views.Home ),
+    # # path("register/", views.register ),
+    # path("register" ,views.RegisterApiView.as_view()),
+    # path("register/<id>" ,views.RegisterApiView.as_view()),
+    # path("student/" ,views.StudentApiView.as_view())
+    path("myusers/" ,views.MyUserApiView.as_view()),
+    path("myusers/<id>" ,views.MyUserApiView.as_view())
 
 ]
